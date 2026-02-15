@@ -1,0 +1,35 @@
+/* Estilo general */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero section */
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Títulos */
+h1, h2 {
+    font-family: 'Georgia', serif;
+}
+
+/* Botón principal */
+.btn-light {
+    background-color: rgba(255,255,255,0.8);
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.btn-light:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    font-size: 0.9rem;
+}
