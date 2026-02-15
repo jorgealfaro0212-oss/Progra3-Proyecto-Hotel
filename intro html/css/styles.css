@@ -1,4 +1,5 @@
-/* Estilo general */
+/* Estilo general de la página:
+   Define la fuente principal, el color del texto y elimina márgenes/padding por defecto */
 body {
     font-family: 'Segoe UI', sans-serif;
     color: #333;
@@ -6,30 +7,36 @@ body {
     padding: 0;
 }
 
-/* Hero section */
+/* Sección Hero:
+   Ajusta cómo se muestra la imagen de fondo (centrada y sin repetirse) */
 .hero {
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Títulos */
+/* Títulos principales (h1 y h2):
+   Les da una fuente distinta para que se vean más elegantes */
 h1, h2 {
     font-family: 'Georgia', serif;
 }
 
-/* Botón principal */
+/* Botón principal:
+   Color de fondo semitransparente, bordes redondeados y animación al pasar el mouse */
 .btn-light {
     background-color: rgba(255,255,255,0.8);
     border-radius: 30px;
     transition: 0.3s;
 }
 
+/* Efecto hover en el botón:
+   Cambia a blanco sólido y se agranda un poco */
 .btn-light:hover {
     background-color: #fff;
     transform: scale(1.05);
 }
 
-/* Footer */
+/* Pie de página:
+   Reduce el tamaño de la letra para que se vea discreto */
 footer {
     font-size: 0.9rem;
 }
