@@ -1,110 +1,170 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Habitaciones - Hotel Ficticio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .card-img-top { height: 200px; object-fit: cover; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habitaciones - Helios Palace</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Estilo para que todas las fotos de habitaciones tengan el mismo tamaño */
+    .habitacion-img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+    /* Efecto sutil al pasar el mouse por la tarjeta */
+    .card {
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+  </style>
 </head>
-<body class="bg-light">
+<body>
 
-    <div class="container mt-5">
-        <h1 class="text-center mb-5 text-primary">Nuestras 8 Habitaciones Disponibles</h1>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Hotel Helios Palace</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link active" href="habitaciones.html">Habitaciones</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Reservas</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Ubicación</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-        <div class="row g-4">
-            
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="img/doble-estandar.jpg" class="card-img-top" alt="Doble Estándar">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Doble Estándar</h5>
-                        <p class="fw-bold text-success">$85 / noche</p>
-                        <button class="btn btn-primary btn-sm w-100">Reservar</button>
-                    </div>
-                </div>
+  <section class="py-5 bg-light text-center">
+    <div class="container">
+      <h1 class="fw-bold">Nuestras Habitaciones</h1>
+      <p class="lead">Explora nuestras opciones diseñadas para tu máximo confort y descanso.</p>
+    </div>
+  </section>
+
+  <section class="pb-5">
+    <div class="container">
+      <div class="row g-4">
+        
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/doble-estandar.jpg" class="card-img-top habitacion-img" alt="Doble Estándar">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Doble Estándar</h5>
+              <p class="text-muted small">Comodidad esencial con dos camas matrimoniales.</p>
+              <p class="text-primary fw-bold">$85 / Noche</p>
+              <a href="#" class="btn btn-dark w-100">Ver Detalles</a>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="img/deluxe-piscina.jpg" class="card-img-top" alt="Deluxe Piscina">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Deluxe Vista Piscina</h5>
-                        <p class="fw-bold text-success">$135 / noche</p>
-                        <button class="btn btn-primary btn-sm w-100">Reservar</button>
-                    </div>
-                </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/doble-jardin.jpg" class="card-img-top habitacion-img" alt="Doble Jardín">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Doble Vista Jardín</h5>
+              <p class="text-muted small">Relájate con una vista directa a nuestras áreas verdes.</p>
+              <p class="text-primary fw-bold">$95 / Noche</p>
+              <a href="#" class="btn btn-dark w-100">Ver Detalles</a>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="img/familiar-superior.jpg" class="card-img-top" alt="Familiar Superior">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Familiar Superior</h5>
-                        <p class="fw-bold text-success">$170 / noche</p>
-                        <button class="btn btn-primary btn-sm w-100">Reservar</button>
-                    </div>
-                </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/doble-deluxe.jpg" class="card-img-top habitacion-img" alt="Doble Deluxe">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Doble Deluxe</h5>
+              <p class="text-muted small">Acabados de lujo y mayor espacio para tu estancia.</p>
+              <p class="text-primary fw-bold">$115 / Noche</p>
+              <a href="#" class="btn btn-dark w-100">Ver Detalles</a>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="img/suite-familiar.jpg" class="card-img-top" alt="Suite Familiar">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Suite Familiar</h5>
-                        <p class="fw-bold text-success">$210 / noche</p>
-                        <button class="btn btn-primary btn-sm w-100">Reservar</button>
-                    </div>
-                </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/deluxe-piscina.jpg" class="card-img-top habitacion-img" alt="Deluxe Piscina">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Deluxe Vista Piscina</h5>
+              <p class="text-muted small">Acceso visual privilegiado a la zona de piscina.</p>
+              <p class="text-primary fw-bold">$135 / Noche</p>
+              <a href="#" class="btn btn-dark w-100">Ver Detalles</a>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="img/doble-deluxe.jpg" class="card-img-top" alt="Doble Deluxe">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Doble Deluxe</h5>
-                        <p class="fw-bold text-success">$115 / noche</p>
-                        <button class="btn btn-primary btn-sm w-100">Reservar</button>
-                    </div>
-                </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/familiar-superior.jpg" class="card-img-top habitacion-img" alt="Familiar Superior">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Familiar Superior</h5>
+              <p class="text-muted small">Dos habitaciones conectadas para toda la familia.</p>
+              <p class="text-primary fw-bold">$170 / Noche</p>
+              <a href="#" class="btn btn-dark w-100">Ver Detalles</a>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="img/doble-jardin.jpg" class="card-img-top" alt="Doble Jardín">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Doble Vista Jardín</h5>
-                        <p class="fw-bold text-success">$95 / noche</p>
-                        <button class="btn btn-primary btn-sm w-100">Reservar</button>
-                    </div>
-                </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/familiar-piscina.jpg" class="card-img-top habitacion-img" alt="Familiar Piscina">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Familiar Vista Piscina</h5>
+              <p class="text-muted small">Espacio familiar con la mejor ubicación del hotel.</p>
+              <p class="text-primary fw-bold">$185 / Noche</p>
+              <a href="#" class="btn btn-dark w-100">Ver Detalles</a>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="img/familiar-piscina.jpg" class="card-img-top" alt="Familiar Piscina">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Familiar Vista Piscina</h5>
-                        <p class="fw-bold text-success">$185 / noche</p>
-                        <button class="btn btn-primary btn-sm w-100">Reservar</button>
-                    </div>
-                </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/suite-familiar.jpg" class="card-img-top habitacion-img" alt="Suite Familiar">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Suite Familiar</h5>
+              <p class="text-muted small">Máximo confort con sala de estar y dos dormitorios.</p>
+              <p class="text-primary fw-bold">$210 / Noche</p>
+              <a href="#" class="btn btn-dark w-100">Ver Detalles</a>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-6 col-lg-3">
-                <div class="card h-100 shadow-sm border-0">
-                    <img src="img/suite-presidencial.jpg" class="card-img-top" alt="Suite Presidencial">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Suite Presidencial</h5>
-                        <p class="fw-bold text-success">$250 / noche</p>
-                        <button class="btn btn-primary btn-sm w-100">Reservar</button>
-                    </div>
-                </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/suite-presidencial.jpg" class="card-img-top habitacion-img" alt="Suite Presidencial">
+            <div class="card-body text-center">
+              <h5 class="card-title fw-bold">Suite Presidencial</h5>
+              <p class="text-muted small">La joya de la corona con jacuzzi y vista panorámica.</p>
+              <p class="text-primary fw-bold">$250 / Noche</p>
+              <a href="#" class="btn btn-dark w-100">Ver Detalles</a>
             </div>
+          </div>
+        </div>
 
-        </div> </div>
+      </div> </div>
+  </section>
+
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p>&copy; 2026 Helios Palace Hotel | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      console.log("Catálogo de habitaciones cargado correctamente");
+    });
+  </script>
 
 </body>
 </html>
