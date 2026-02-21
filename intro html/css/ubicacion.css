@@ -1,0 +1,97 @@
+/* 
+   PÁGINA DE UBICACIÓN
+*/
+
+/* Hero con imagen de la entrada del hotel */
+.ubicacion-page .hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh; /* altura similar a la principal */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    margin-top: 70px; /* deja espacio para la navbar fija */
+
+}
+
+.ubicacion-page .hero h1 {
+    font-family: 'Georgia', serif; /* Tipografía coherente */
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.ubicacion-page .hero p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #f1f1f1;
+}
+
+/* Contenedor general */
+.location-container {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.location-content {
+    display: flex;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* Panel de información */
+.info-side {
+    flex: 1;
+    background: rgba(255,255,255,0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.info-side h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #121212;
+}
+
+/* Elementos de detalle (dirección, teléfono, correo) */
+.detail-item {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Íconos */
+.detail-item i {
+    color: #8f9b94; /* coherente con hover del navbar */
+    margin-right: 8px;
+}
+
+.how-to-get h3 {
+    margin-top: 20px;
+    font-size: 1.3rem;
+    color: #121212;
+}
+
+.how-to-get li {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Mapa */
+.map-side {
+    flex: 1;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    background: #121212; /* marco oscuro para integrarlo */
+    padding: 5px;
+}

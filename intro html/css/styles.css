@@ -4,7 +4,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 0;/* (reseteo de estilos) */
 }
 
 /* Sección Hero:
@@ -40,9 +40,11 @@ h1, h2 {
 footer {
     font-size: 0.9rem;
 }
+
+/* Imágenes de servicios */
 .servicio-img {
-  width: 100%;           /* Ocupa todo el ancho del contenedor */
+  width: 100%;           /* ancho del contenedor */
   height: 250px;         /* Altura fija para todas */
-  object-fit: cover;     /* Recorta la imagen para que se vea bien sin deformarse */
-  border-radius: 10px;   /* Bordes redondeados opcionales */
+  object-fit: cover;     /* Recorta de imagen para que se vea bien sin deformarse */
+  border-radius: 10px;   /* Bordes redondeados  */
 }
