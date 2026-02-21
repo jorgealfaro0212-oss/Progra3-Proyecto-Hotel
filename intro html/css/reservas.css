@@ -1,0 +1,57 @@
+/*
+    Estilos específicos para la página de reservas
+*/
+
+/* Hero de reservas */
+/* Ajusta la imagen de fondo y centra el contenido */
+.reserva-page .hero {
+    background-position: center;   /* Centra el fondo */
+    background-repeat: no-repeat;  /* Evita la imagen repetida*/
+    background-size: cover;        /* Escala la imagen para cubrir todo el área */
+    height: 60vh;                  /* Altura fija del hero */
+    display: flex;                 /* centrar contenido */
+    align-items: center;           /* Centrado vertical */
+    justify-content: center;       /* Centrado horizontal */
+    text-align: center;            /* alineado  */
+    color: white;                  
+    margin-top: 70px;              /* espacio para la navbar fija */
+}
+
+/* Título dentro del hero */
+.reserva-page .hero h1 {
+    font-family: 'Georgia', serif; /* Tipografía  */
+    font-size: 2.5rem;             
+    color: #fff;                   
+}
+
+/* Subtítulo dentro del hero */
+.reserva-page .hero p {
+    font-size: 1.2rem;             /* Tamaño medio */
+    margin-top: 10px;              
+    color: #f1f1f1;                
+}
+
+/* Formulario */
+/* Limita el ancho y centra el formulario */
+.booking-container {
+    max-width: 800px;              /* Ancho  */
+    margin: 0 auto;                /* Centrado horizontal */
+}
+
+/* Etiquetas del formulario */
+.booking-container label {
+    font-weight: bold;             
+    color: #121212;                
+}
+
+/* Texto del total a pagar */
+.total-display h3 {
+    font-family: 'Georgia', serif; /* Tipografía  */
+    color: #121212;                
+}
+
+/* Botón de confirmación */
+/* estilo claro de Bootstrap pero con negrita */
+.btn-light {
+    font-weight: bold;             /* Texto en negrita */
+}
