@@ -4,7 +4,7 @@ body {
     font-family: 'Segoe UI', sans-serif;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 0;/* (reseteo de estilos) */
 }
 
 /* Sección Hero:
