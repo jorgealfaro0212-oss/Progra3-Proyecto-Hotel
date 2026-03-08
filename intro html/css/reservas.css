@@ -3,55 +3,79 @@
 */
 
 /* Hero de reservas */
-/* Ajusta la imagen de fondo y centra el contenido */
 .reserva-page .hero {
     background-position: center;   /* Centra el fondo */
-    background-repeat: no-repeat;  /* Evita la imagen repetida*/
+    background-repeat: no-repeat;  /* Evita la imagen repetida */
     background-size: cover;        /* Escala la imagen para cubrir todo el área */
     height: 60vh;                  /* Altura fija del hero */
-    display: flex;                 /* centrar contenido */
+    display: flex;                 /* Centrar contenido */
     align-items: center;           /* Centrado vertical */
     justify-content: center;       /* Centrado horizontal */
-    text-align: center;            /* alineado  */
+    text-align: center;            /* Alineado */
     color: white;                  
-    margin-top: 70px;              /* espacio para la navbar fija */
+    margin-top: 70px;              /* Espacio para la navbar fija */
 }
 
-/* Título dentro del hero */
+/* --- NUEVO: Estilo para el contenedor que parece un botón --- */
+.btn-reservas-hero {
+    display: inline-block;
+    padding: 20px 50px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo negro semitransparente */
+    border: 3px solid #ffffff;           /* Borde blanco grueso */
+    border-radius: 15px;                 /* Bordes redondeados */
+    backdrop-filter: blur(5px);          /* Efecto de desenfoque detrás del botón */
+    transition: transform 0.3s ease;     /* Animación suave */
+}
+
+/* Efecto al pasar el mouse sobre el título/botón */
+.btn-reservas-hero:hover {
+    transform: scale(1.05);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Título dentro del hero (ajustado para el nuevo diseño) */
 .reserva-page .hero h1 {
-    font-family: 'Georgia', serif; /* Tipografía  */
-    font-size: 2.5rem;             
+    font-family: 'Georgia', serif; 
+    margin: 0;                     /* Quita márgenes extra para que luzca bien en el cuadro */
     color: #fff;                   
 }
 
-/* Subtítulo dentro del hero */
+/* Subtítulo debajo del botón */
 .reserva-page .hero p {
-    font-size: 1.2rem;             /* Tamaño medio */
-    margin-top: 10px;              
+    font-size: 1.2rem;             
+    margin-top: 20px;              /* Un poco más de espacio respecto al botón */
     color: #f1f1f1;                
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Sombra para que se lea mejor sobre la foto */
 }
 
-/* Formulario */
-/* Limita el ancho y centra el formulario */
+/* --- FORMULARIO Y OTROS --- */
+
 .booking-container {
-    max-width: 800px;              /* Ancho  */
-    margin: 0 auto;                /* Centrado horizontal */
+    max-width: 800px;              
+    margin: 0 auto;                
 }
 
-/* Etiquetas del formulario */
 .booking-container label {
     font-weight: bold;             
     color: #121212;                
 }
 
-/* Texto del total a pagar */
 .total-display h3 {
-    font-family: 'Georgia', serif; /* Tipografía  */
+    font-family: 'Georgia', serif; 
     color: #121212;                
 }
 
-/* Botón de confirmación */
-/* estilo claro de Bootstrap pero con negrita */
 .btn-light {
-    font-weight: bold;             /* Texto en negrita */
+    font-weight: bold;             
+}
+
+/* --- RESPONSIVE / MÓVILES --- */
+@media (max-width: 768px) {
+    .btn-reservas-hero h1 {
+        font-size: 3rem !important; /* Fuerza el tamaño en celulares */
+    }
+    .btn-reservas-hero {
+        padding: 15px 30px;
+        border-width: 2px;
+    }
 }
