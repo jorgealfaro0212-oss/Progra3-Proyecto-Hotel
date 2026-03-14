@@ -22,13 +22,13 @@ header {
 }
 
 .navbar {
-    background-color: var(--deep-black) !important;
+    background-color: var(--deep-black);
     padding: 15px 0;
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
 .nav-link {
-    color: #ffffff !important;
+    color: #ffffff ;
 }
 
 /* --- CONTENEDOR PRINCIPAL --- */
@@ -86,7 +86,7 @@ main.hero-reservation {
 
 /* --- TEXTOS EN COLOR BLANCO --- */
 .form-label {
-    color: #ffffff !important; /* Fuerza el color blanco en las etiquetas */
+    color: #ffffff ; /* Fuerza el color blanco en las etiquetas */
     font-weight: 500;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.6); /* Mejora legibilidad */
     display: block;
@@ -95,7 +95,7 @@ main.hero-reservation {
 }
 
 .total-section p {
-    color: #ffffff !important; /* Texto de 'Total a pagar' en blanco */
+    color: #ffffff ; /* Texto de 'Total a pagar' en blanco */
     font-size: 1.4rem;
     font-weight: 600;
 }
