@@ -6,20 +6,20 @@
 /* Ajusta la imagen de fondo y centra el contenido */
 .reserva-page .hero {
     background-position: center;   /* Centra el fondo */
-    background-repeat: no-repeat;  /* Evita la imagen repetida*/
+    background-repeat: no-repeat;  /* Evita la imagen repetida */
     background-size: cover;        /* Escala la imagen para cubrir todo el área */
     height: 60vh;                  /* Altura fija del hero */
-    display: flex;                 /* centrar contenido */
+    display: flex;                 /* Centrar contenido */
     align-items: center;           /* Centrado vertical */
     justify-content: center;       /* Centrado horizontal */
-    text-align: center;            /* alineado  */
+    text-align: center;            /* Alineado */
     color: white;                  
-    margin-top: 70px;              /* espacio para la navbar fija */
+    margin-top: 70px;              /* Espacio para la navbar fija */
 }
 
 /* Título dentro del hero */
 .reserva-page .hero h1 {
-    font-family: 'Georgia', serif; /* Tipografía  */
+    font-family: 'Georgia', serif; /* Tipografía elegante */
     font-size: 2.5rem;             
     color: #fff;                   
 }
@@ -31,10 +31,9 @@
     color: #f1f1f1;                
 }
 
-/* Formulario */
-/* Limita el ancho y centra el formulario */
+/* Contenedor del formulario */
 .booking-container {
-    max-width: 800px;              /* Ancho  */
+    max-width: 800px;              /* Ancho limitado */
     margin: 0 auto;                /* Centrado horizontal */
 }
 
@@ -46,12 +45,34 @@
 
 /* Texto del total a pagar */
 .total-display h3 {
-    font-family: 'Georgia', serif; /* Tipografía  */
+    font-family: 'Georgia', serif; /* Tipografía */
     color: #121212;                
 }
 
 /* Botón de confirmación */
-/* estilo claro de Bootstrap pero con negrita */
+
 .btn-light {
-    font-weight: bold;             /* Texto en negrita */
+    font-weight: bold;  /* Texto en negrita */
+}
+
+/* --- NUEVAS CLASES PERSONALIZADAS --- */
+
+/* Márgenes inferiores */
+.espacio-abajo {
+    margin-bottom: 1rem; 
+}
+
+/* Columnas personalizadas para formulario */
+.columna-formulario {
+    flex: 0 0 50%;   /* Ocupa la mitad del ancho */
+    max-width: 50%;
+    padding: 10px;
+}
+
+/* Responsivo: en pantallas pequeñas las columnas se apilan */
+@media (max-width: 768px) {
+    .columna-formulario {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
