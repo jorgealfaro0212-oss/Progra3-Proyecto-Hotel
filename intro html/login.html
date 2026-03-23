@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Helios Palace</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Hotel Helios Palace</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+              <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
+              <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas</a></li>
+              <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+              <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="flex-grow-1 d-flex align-items-center my-5">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5 col-lg-4">
+                <div class="login-card text-center shadow-lg">
+                    <h2 class="mb-4">Iniciar sesión</h2>
+                    <form id="loginForm">
+                        <div class="mb-4 text-start">
+                            <label class="form-label">Usuario</label>
+                            <input type="text" id="user" class="form-control" placeholder="administrador" required>
+                        </div>
+                        <div class="mb-4 text-start">
+                            <label class="form-label">Contraseña</label>
+                            <input type="password" id="pass" class="form-control" placeholder="•••••" required>
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100 mt-2 py-2">Ingresar</button>
+                        
+                        <div id="errorMessage" class="text-danger mt-3" style="display:none;">
+                            Credenciales incorrectas. Intente de nuevo.
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-md-3 mb-4">
+          <h5 class="fw-bold">Helios Palace</h5>
+          <p class="opacity-75">Un lugar único para descanso y experiencias exclusivas.</p>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold text-uppercase small mb-3">Navegación</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-white text-decoration-none opacity-75">Inicio</a></li>
+            <li class="mb-2"><a href="servicios.html" class="text-white text-decoration-none opacity-75">Servicios</a></li>
+            <li class="mb-2"><a href="habitaciones.html" class="text-white text-decoration-none opacity-75">Habitaciones</a></li>
+            <li class="mb-2"><a href="reservas.html" class="text-white text-decoration-none opacity-75">Reservas</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold text-uppercase small mb-3">Información</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Términos y Condiciones</a></li>
+            <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Política de Privacidad</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <h6 class="fw-bold text-uppercase small mb-3">Contáctanos</h6>
+          <p class="mb-1">Email: reservas@heliospalace.com</p>
+          <p class="mb-3">Tel: +506 2222-3333</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+      <hr class="border-secondary my-4">
+      <div class="text-center">
+        <p class="mb-0 small opacity-50">&copy; 2026 Helios Palace Hotel | Todos los derechos reservados</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Lógica de Login (se mantiene igual)
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        const user = document.getElementById('user').value;
+        const pass = document.getElementById('pass').value;
+
+        if (user === "administrador" && pass === "12345") {
+            localStorage.setItem('admin_logged', 'true');
+            window.location.href = "dashboard.html";
+        } else {
+            const errorDiv = document.getElementById('errorMessage');
+            errorDiv.style.display = 'block';
+            errorDiv.classList.remove('shake');
+            void errorDiv.offsetWidth; 
+            errorDiv.classList.add('shake');
+        }
+    });
+  </script>
+
+</body>
+</html>
