@@ -1,0 +1,152 @@
+:root {
+    --gold-dark: #8c6d31;
+    --gold-light: #b08d57;
+    --bg-glass: rgba(0, 0, 0, 0.1); 
+    --deep-black: #0d0d0d;
+}
+
+/* --- CONFIGURACIÓN GLOBAL --- */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #000;
+    min-height: 100vh;
+}
+
+/* --- CABECERA --- */
+header {
+    width: 100%;
+    z-index: 2000;
+    background-color: var(--deep-black);
+}
+
+.navbar {
+    background-color: var(--deep-black);
+    padding: 15px 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.nav-link {
+    color: #ffffff ;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* --- CUERPO PRINCIPAL (FONDO) --- */
+main.hero-reservation {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/hotel.jpg') no-repeat center center fixed;
+    background-size: cover;
+    flex-grow: 1;
+    width: 100%;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    padding: 60px 0;
+}
+
+/* Título "RESERVAS" */
+.title-badge {
+    background-color: #000;
+    border: 2px solid #fff;
+    padding: 10px 45px;
+    border-radius: 5px;
+    z-index: 10;
+    margin-bottom: -25px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.title-badge h1 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    letter-spacing: 4px;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+/* CUADRO DE DATOS (BOOKING CARD) */
+.booking-card {
+    background: var(--bg-glass);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgb(255, 255, 255);
+    padding: 60px 40px 40px 40px; 
+    border-radius: 20px;
+    width: 95%;
+    max-width: 550px;
+    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+}
+
+/* --- TEXTOS EN COLOR BLANCO --- */
+.form-label {
+    color: #ffffff ; /* Fuerza el color blanco en las etiquetas */
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6); /* Mejora legibilidad */
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.total-section p {
+    color: #ffffff ; /* Texto de 'Total a pagar' en blanco */
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.price-amount {
+    color: #ffd700; /* El número del precio lo mantenemos en dorado para resaltar */
+}
+
+/* Inputs y Selects (El texto dentro es oscuro para leerse sobre el blanco) */
+.form-control, .form-select {
+    border-radius: 8px;
+    border: none;
+    padding: 12px;
+    background-color: #fff;
+    color: #070707;
+    margin-bottom: 15px;
+}
+
+.btn-confirm {
+    background: #a68b5a;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-confirm:hover {
+    background: #8e7345;
+}
+
+/* Pie de página */
+footer {
+    font-size: 0.9rem;
+}
+
+/* Imágenes de servicios */
+.servicio-img {
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Márgenes */
+.espacio-pequeno { margin-top: 0.5rem; }
+.espacio-medio { margin-top: 1rem; }
+.espacio-grande { margin-top: 1.5rem; }
+.espacio-abajo { margin-bottom: 1rem; }
