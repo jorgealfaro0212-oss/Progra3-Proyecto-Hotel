@@ -132,6 +132,7 @@ main.hero-reservation {
     background: #8e7345;
 }
 
+<<<<<<< HEAD
 /* Pie de página */
 footer {
     font-size: 0.9rem;
@@ -150,3 +151,14 @@ footer {
 .espacio-medio { margin-top: 1rem; }
 .espacio-grande { margin-top: 1.5rem; }
 .espacio-abajo { margin-bottom: 1rem; }
+=======
+/* --- PIE DE PÁGINA --- */
+.custom-footer {
+    background-color: var(--deep-black);
+    color: #ffffff;
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #333;
+}
+>>>>>>> e9775d89f43797d230e096a9e97748dee493eb7e
