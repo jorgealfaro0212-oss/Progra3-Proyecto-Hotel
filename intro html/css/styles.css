@@ -1,50 +1,50 @@
-/* Estilo general de la página:
-   Define la fuente principal, el color del texto y elimina márgenes/padding por defecto */
+/* Estilo general de la página */
 body {
     font-family: 'Segoe UI', sans-serif;
     color: #333;
     margin: 0;
-    padding: 0;/* (reseteo de estilos) */
+    padding: 0;
 }
 
-/* Sección Hero:
-   Ajusta cómo se muestra la imagen de fondo (centrada y sin repetirse) */
+/* Sección Hero */
 .hero {
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Títulos principales (h1 y h2):
-   Les da una fuente distinta para que se vean más elegantes */
+/* Títulos principales */
 h1, h2 {
     font-family: 'Georgia', serif;
 }
 
-/* Botón principal:
-   Color de fondo semitransparente, bordes redondeados y animación al pasar el mouse */
+/* Botón principal */
 .btn-light {
     background-color: rgba(255,255,255,0.8);
     border-radius: 30px;
     transition: 0.3s;
+    font-weight: bold;
 }
-
-/* Efecto hover en el botón:
-   Cambia a blanco sólido y se agranda un poco */
 .btn-light:hover {
     background-color: #fff;
     transform: scale(1.05);
 }
 
-/* Pie de página:
-   Reduce el tamaño de la letra para que se vea discreto */
+/* Pie de página */
 footer {
     font-size: 0.9rem;
 }
 
 /* Imágenes de servicios */
 .servicio-img {
-  width: 100%;           /* ancho del contenedor */
-  height: 250px;         /* Altura fija para todas */
-  object-fit: cover;     /* Recorta de imagen para que se vea bien sin deformarse */
-  border-radius: 10px;   /* Bordes redondeados  */
+  width: 80%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
 }
+
+/* Márgenes */
+.espacio-pequeno { margin-top: 0.5rem; }
+.espacio-medio { margin-top: 1rem; }
+.espacio-grande { margin-top: 1.5rem; }
+.espacio-abajo { margin-bottom: 1rem; }
+
