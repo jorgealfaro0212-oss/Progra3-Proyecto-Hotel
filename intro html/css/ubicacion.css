@@ -1,98 +1,95 @@
-/* PÁGINA DE UBICACIÓN - REDISEÑO PREMIUM 2026 */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap');
 
-:root {
-    --celeste-moderno: #4db8ff; /* El tono celeste que pediste */
-    --celeste-glow: rgba(77, 184, 255, 0.4);
-}
+ @import  url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap');
+
+ :root {
+    --celeste-moderno:  #4db8ff; 
+      --celeste-glow:   rgba(77, 184, 255, 0.4) ;}
 
 .ubicacion-page {
-    background-color: #f4f7f6;
-    font-family: 'Poppins', sans-serif;
-}
+    background-color:  #f4f7f6 ;
+      font-family: 'Poppins',  sans-serif; }
 
-/* Hero con efecto de profundidad */
-.ubicacion-page .hero {
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80'); /* Imagen de ejemplo */
+   .ubicacion-page .hero  {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) , 
+                url ('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') ; 
     background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 65vh;
-    display: flex;
+       background-repeat : no-repeat ;
+    background-size : cover ;
+    background-attachment:  fixed ;
+      height : 65vh ;
+     display:  flex;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
+      justify-content  : center;
+    text-align: center ;
+     color: white;}
 
-.ubicacion-page .hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem;
-    font-weight: 700;
-    text-shadow: 2px 4px 15px rgba(0,0,0,0.4);
-}
+         .ubicacion-page .hero h1  {
+            font-family: 'Playfair Display',  serif;
+                font-size :  4rem;
+              font-weight: 700 ;
+          text-shadow : 2px 4px 15px rgba(0,0,0,0.4) ; }
 
-/* Contenedor Principal */
-.location-section {
-    padding: 0 20px 100px 20px;
-    margin-top: -80px;
-    position: relative;
-    z-index: 10;
-}
+/* Contenedor*/
 
-/* Tarjeta Glassmorphism */
-.glass-container {
+ .location-section   {
+
+      padding: 0 20px 100px 20px;
+    margin-top : -80px ;
+      position:  relative;
+      z-index : 10 ;}
+
+
+ .glass-container  {
     max-width: 1200px;
-    margin: 0 auto;
+
+    margin: 0 auto ;
     background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.1);
-    border: 1px solid rgba(255,255,255,0.4);
+       backdrop-filter : blur(10px) ;
+       border-radius: 20px;
+      overflow : hidden;
+     box-shadow : 0 25px 50px rgba(0,0,0,0.1) ;
+    border: 1px solid rgba (255,255,255,0.4);
 }
 
-.info-padding {
-    padding: 60px;
-}
+ .info-padding  {
+          padding:  60px;  }
 
-.section-title {
-    font-family: 'Playfair Display', serif;
-    font-size: 2.5rem;
-    color: #1a1a1a;
-}
+   .section-title {
+    font-family : 'Playfair  Display' , serif ;
+    font-size:  2.5rem ;
+    color :  #1a1a1a ;   }
 
-/* --- ICONOS CELESTES MODERNOS --- */
-.icon-box {
-    width: 50px;
-    height: 50px;
-    background: #f0faff; /* Celeste muy pálido de fondo */
-    border: 1px solid var(--celeste-moderno);
-    border-radius: 12px; /* Bordes ligeramente redondeados, estilo moderno */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
-    color: var(--celeste-moderno);
+/*  ICONOS  */
+  .icon-box  {
+    width :  50px;
+     height: 50px ;
+    background: #f0faff; 
+      border: 1px solid  var(--celeste-moderno) ;
+    border-radius: 12px; 
+    display : flex;
+     
+       align-items: center ;
+    justify-content:  center;
+    margin-right: 20px ;
+     color:  var(--celeste-moderno);
     font-size: 1.3rem;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition:  all 0.4s cubic-bezier(0.175,0.885,0.32,1.275) ;
 }
 
-.detail-item {
-    display: flex;
+ .detail-item {
+      display: flex;
     align-items: center;
-    margin-bottom: 25px;
+     margin-bottom: 25px;
     font-size: 1.1rem;
     color: #444;
     transition: transform 0.3s ease;
     cursor: default;
 }
 
-/* Efecto Hover en Iconos */
-.detail-item:hover {
+
+  .detail-item:hover {
+     
     transform: translateX(10px);
 }
 
@@ -103,11 +100,11 @@
     transform: rotate(5deg) scale(1.1);
 }
 
-/* Sección "¿Cómo llegar?" */
+
 .how-to-get h3 {
-    font-family: 'Playfair Display', serif;
-    font-size: 1.6rem;
-    margin-top: 30px;
+     font-family: 'Playfair Display' , serif;
+    font-size: 1.6rem ;
+     margin-top: 30px;
 }
 
 .how-to-get li {
@@ -132,26 +129,25 @@
     height: 100%;
 }
 
-/* Botón Google Maps */
+  /* Btn Google Maps */
 .btn-outline-dark {
     border: 2px solid var(--celeste-moderno);
-    color: var(--celeste-moderno);
+     color : var(--celeste-moderno);
     padding: 12px 25px;
-    font-weight: 600;
-    border-radius: 50px; /* Botón tipo píldora, más moderno */
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.3s ease;
+       font-weight: 600;
+    border-radius:  50px; 
+     text-decoration:  none;
+    display : inline-block;
+      transition: all 0.3s ease ;
 }
 
-.btn-outline-dark:hover {
+.btn-outline-dark:hover  {
     background: var(--celeste-moderno);
     color: #fff;
-    box-shadow: 0 10px 20px var(--celeste-glow);
-}
+     box-shadow: 0 10px 20px var(--celeste-glow);
+ }
 
-/* Responsividad */
-@media (max-width: 991px) {
-    .map-side { min-height: 400px; }
-    .info-padding { padding: 40px; }
-}
+    /* Responsividad */
+  @media (max-width: 991px ) {
+    .map-side { min-height:  400px; }
+    .info-padding {  padding: 40px; } }
