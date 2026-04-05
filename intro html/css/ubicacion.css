@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* PÁGINA DE UBICACIÓN - REDISEÑO PREMIUM 2026 */
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap');
@@ -85,14 +86,105 @@
     display: flex;
     align-items: center;
     margin-bottom: 25px;
+=======
+
+
+ @import  url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap');
+
+ :root {
+    --celeste-moderno:  #4db8ff; 
+      --celeste-glow:   rgba(77, 184, 255, 0.4) ;}
+
+.ubicacion-page {
+    background-color:  #f4f7f6 ;
+      font-family: 'Poppins',  sans-serif; }
+
+   .ubicacion-page .hero  {
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)) , 
+                url ('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') ; 
+    background-position: center;
+       background-repeat : no-repeat ;
+    background-size : cover ;
+    background-attachment:  fixed ;
+      height : 65vh ;
+     display:  flex;
+    align-items: center;
+      justify-content  : center;
+    text-align: center ;
+     color: white;}
+
+         .ubicacion-page .hero h1  {
+            font-family: 'Playfair Display',  serif;
+                font-size :  4rem;
+              font-weight: 700 ;
+          text-shadow : 2px 4px 15px rgba(0,0,0,0.4) ; }
+
+/* Contenedor*/
+
+ .location-section   {
+
+      padding: 0 20px 100px 20px;
+    margin-top : -80px ;
+      position:  relative;
+      z-index : 10 ;}
+
+
+ .glass-container  {
+    max-width: 1200px;
+
+    margin: 0 auto ;
+    background: rgba(255, 255, 255, 0.95);
+       backdrop-filter : blur(10px) ;
+       border-radius: 20px;
+      overflow : hidden;
+     box-shadow : 0 25px 50px rgba(0,0,0,0.1) ;
+    border: 1px solid rgba (255,255,255,0.4);
+}
+
+ .info-padding  {
+          padding:  60px;  }
+
+   .section-title {
+    font-family : 'Playfair  Display' , serif ;
+    font-size:  2.5rem ;
+    color :  #1a1a1a ;   }
+
+/*  ICONOS  */
+  .icon-box  {
+    width :  50px;
+     height: 50px ;
+    background: #f0faff; 
+      border: 1px solid  var(--celeste-moderno) ;
+    border-radius: 12px; 
+    display : flex;
+     
+       align-items: center ;
+    justify-content:  center;
+    margin-right: 20px ;
+     color:  var(--celeste-moderno);
+    font-size: 1.3rem;
+    transition:  all 0.4s cubic-bezier(0.175,0.885,0.32,1.275) ;
+}
+
+ .detail-item {
+      display: flex;
+    align-items: center;
+     margin-bottom: 25px;
+>>>>>>> 1e135030774f92dbbaf8cc6b22f4c85420125d6e
     font-size: 1.1rem;
     color: #444;
     transition: transform 0.3s ease;
     cursor: default;
 }
 
+<<<<<<< HEAD
 /* Efecto Hover en Iconos */
 .detail-item:hover {
+=======
+
+  .detail-item:hover {
+     
+>>>>>>> 1e135030774f92dbbaf8cc6b22f4c85420125d6e
     transform: translateX(10px);
 }
 
@@ -103,11 +195,19 @@
     transform: rotate(5deg) scale(1.1);
 }
 
+<<<<<<< HEAD
 /* Sección "¿Cómo llegar?" */
 .how-to-get h3 {
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
     margin-top: 30px;
+=======
+
+.how-to-get h3 {
+     font-family: 'Playfair Display' , serif;
+    font-size: 1.6rem ;
+     margin-top: 30px;
+>>>>>>> 1e135030774f92dbbaf8cc6b22f4c85420125d6e
 }
 
 .how-to-get li {
@@ -132,6 +232,7 @@
     height: 100%;
 }
 
+<<<<<<< HEAD
 /* Botón Google Maps */
 .btn-outline-dark {
     border: 2px solid var(--celeste-moderno);
@@ -155,3 +256,27 @@
     .map-side { min-height: 400px; }
     .info-padding { padding: 40px; }
 }
+=======
+  /* Btn Google Maps */
+.btn-outline-dark {
+    border: 2px solid var(--celeste-moderno);
+     color : var(--celeste-moderno);
+    padding: 12px 25px;
+       font-weight: 600;
+    border-radius:  50px; 
+     text-decoration:  none;
+    display : inline-block;
+      transition: all 0.3s ease ;
+}
+
+.btn-outline-dark:hover  {
+    background: var(--celeste-moderno);
+    color: #fff;
+     box-shadow: 0 10px 20px var(--celeste-glow);
+ }
+
+    /* Responsividad */
+  @media (max-width: 991px ) {
+    .map-side { min-height:  400px; }
+    .info-padding {  padding: 40px; } }
+>>>>>>> 1e135030774f92dbbaf8cc6b22f4c85420125d6e

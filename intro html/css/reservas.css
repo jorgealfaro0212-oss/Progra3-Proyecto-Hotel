@@ -5,6 +5,7 @@
     --deep-black: #0d0d0d;
 }
 
+<<<<<<< HEAD
 /* --- CONFIGURACIÓN GLOBAL --- */
 body, html {
     margin: 0;
@@ -19,6 +20,21 @@ header {
     width: 100%;
     z-index: 2000;
     background-color: var(--deep-black);
+=======
+
+ body, html {
+     margin: 0;
+    padding: 0;
+       font-family: 'Poppins',  sans-serif;
+     background: #000;
+    min-height: 100vh ;
+}
+
+ header { 
+    width:    100%;
+     z-index:  2000;
+     background-color:  var(--deep-black) ;
+>>>>>>> 1e135030774f92dbbaf8cc6b22f4c85420125d6e
 }
 
 .navbar {
@@ -27,6 +43,7 @@ header {
     border-bottom: 1px solid rgb(0, 0, 0);
 }
 
+<<<<<<< HEAD
 .nav-link {
     color: #ffffff ;
 }
@@ -162,3 +179,130 @@ footer {
     border-top: 1px solid #333;
 }
 >>>>>>> e9775d89f43797d230e096a9e97748dee493eb7e
+=======
+.nav-link { 
+
+      color: #ffffff ;}
+
+
+ .main-wrapper {
+    display: flex ;
+    flex-direction:  column ;
+     min-height:  100vh ;
+     
+}
+
+/*FONDO */
+main.hero-reservation {
+     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/hotel.jpg')  no-repeat center center fixed ;
+
+      background-size: cover;
+
+             flex-grow: 1;
+    width: 100%;
+      display: flex; 
+    flex-direction:  column; 
+     align-items:    center;    
+    justify-content:  center; 
+      padding: 60px 0;
+ }
+
+
+.title-badge  
+{
+      background-color: #000;
+         border: 2px solid #fff;
+    padding: 10px   45px;
+     border-radius:  5px;
+    z-index: 10;
+       margin-bottom:  -25px;
+     box-shadow: 0 10px  20px rgba(0,0,0,0.5);
+}
+
+     .title-badge h1  {
+       color: #fff;
+    font-family:   'Playfair Display', serif;
+         margin: 0;
+     letter-spacing:  4px;
+    font-size: 1.6rem;
+        text-transform:   uppercase;
+}
+
+
+.booking-card {
+
+
+    background: var(--bg-glass);
+       backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+         border: 1px solid rgb(255, 255, 255);
+        padding: 60px 40px 40px 40px; 
+     border-radius: 20px;
+       width: 95%;
+            max-width: 550px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+
+ }
+
+
+.form-label {
+
+      color: #ffffff ; 
+    font-weight: 500;
+       text-shadow: 1px 1px 2px rgba(0,0,0,0.6); 
+    display: block;
+     text-align: left;
+        margin-bottom: 5px;
+
+}
+
+.total-section p  {
+
+    color: #ffffff ; 
+       font-size: 1.4rem;
+               font-weight: 600;
+ }
+
+.price-amount  {
+    color: #ffd700; }
+
+
+.form-control, .form-select  {
+
+       border-radius: 8px;
+    border: none;
+        padding: 12px;
+     background-color: #fff;
+    color: #070707;
+     margin-bottom: 15px;
+
+}
+
+  .btn-confirm {
+     background: #a68b5a ;
+      color: #fff;
+    border: none;
+     width: 100%;
+     padding: 15px;
+      border-radius: 8px;
+      font-weight: 700;
+       text-transform: uppercase ;
+    margin-top: 10px;
+        cursor: pointer;
+     transition: 0.3s ease;
+    }
+
+   .btn-confirm:hover {
+    background: #8e7345;}
+
+
+ .custom-footer {
+
+    background-color: var(--deep-black);
+    color: #ffffff;
+     padding: 20px 0;
+      width: 100%;
+    text-align: center;
+       border-top: 1px solid #333;
+    }
+>>>>>>> 1e135030774f92dbbaf8cc6b22f4c85420125d6e
