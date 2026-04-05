@@ -1,0 +1,100 @@
+/* ESTILOS ESPECÍFICOS DEL DASHBOARD */
+
+/* Tarjetas de estadísticas generales*/
+.stat-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden; /* Para que el contenido respete los bordes redondeados */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: default; /* El cursor no cambia */
+}
+
+/* Efecto suave al pasar el mouse, para que el admin*/
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+/* ESTILOS DE TEXTO DENTRO DE LAS TARJETAS*/
+
+/* Esta clase afecta a los números grandes*/
+.stat-card h2 {
+    /* Fuente moderna*/
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Super negrita para que resalte */
+    font-size: 3.5rem; /* El tamaño lo ajustamos*/
+    margin: 0;
+    line-height: 1; /* Ajustamos el espacio entre líneas */
+    letter-spacing: -1px; /* Unir un poquito los números*/
+}
+
+/* Esta clase afecta a los títulos pequeños*/
+.stat-card small {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; /* Negrita media */
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px; /* Separar las letras */
+    opacity: 0.8; /* Transparencia*/
+    display: block;
+    margin-bottom: 5px; /* Separar del número grande */
+}
+
+/* Ajuste específico para la tarjeta de Check-ins (la amarilla) */
+.stat-card.bg-warning h2,
+.stat-card.bg-warning small {
+    color: #000 !important; /* Asegurar que en fondo amarillo el texto sea negro */
+}
+
+
+/* Resto de estilos del Dashboard*/
+
+/* Tabla */
+.table thead th {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    color: #666;
+    padding: 15px 10px;
+}
+
+.table tbody td {
+    padding: 12px 10px;
+    font-size: 0.9rem;
+}
+
+/* Badges modernos */
+.badge {
+    font-weight: 600;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+/* Contenedor de la tabla */
+.card.table-container {
+    border-radius: 12px;
+    overflow: hidden;
+    border: none;
+}
+
+/* Navbar Admin */
+.navbar-brand {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.bg-dark {
+    background-color: #121212 !important;
+}
+
+/* Ajustes para el celular */
+@media (max-width: 768px) {
+    .stat-card h2 {
+        font-size: 2.8rem;
+    }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
