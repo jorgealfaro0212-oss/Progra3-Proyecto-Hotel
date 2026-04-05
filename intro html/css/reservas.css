@@ -1,308 +1,118 @@
+/* ESTILOS DE LA PÁGINA DE RESERVAS */
+
 :root {
-    --gold-dark: #8c6d31;
-    --gold-light: #b08d57;
-    --bg-glass: rgba(0, 0, 0, 0.1); 
-    --deep-black: #0d0d0d;
+    --dorado: #b08d57;
+    --dorado-oscuro: #8c6d31;
+    --negro-suave: #0d0d0d;
 }
 
-<<<<<<< HEAD
-/* --- CONFIGURACIÓN GLOBAL --- */
 body, html {
     margin: 0;
-    padding: 0;
     font-family: 'Poppins', sans-serif;
     background: #000;
-    min-height: 100vh;
+    color: white;
 }
 
-/* --- CABECERA --- */
+/* El navbar se queda arriba */
 header {
-    width: 100%;
-    z-index: 2000;
-    background-color: var(--deep-black);
-=======
-
- body, html {
-     margin: 0;
-    padding: 0;
-       font-family: 'Poppins',  sans-serif;
-     background: #000;
-    min-height: 100vh ;
+    background-color: var(--negro-suave);
+    border-bottom: 1px solid #222;
 }
 
- header { 
-    width:    100%;
-     z-index:  2000;
-     background-color:  var(--deep-black) ;
->>>>>>> 1e135030774f92dbbaf8cc6b22f4c85420125d6e
+.nav-link:hover {
+    color: var(--dorado) !important;
 }
 
-.navbar {
-    background-color: var(--deep-black);
-    padding: 15px 0;
-    border-bottom: 1px solid rgb(0, 0, 0);
-}
-
-<<<<<<< HEAD
-.nav-link {
-    color: #ffffff ;
-}
-
-/* --- CONTENEDOR PRINCIPAL --- */
-.main-wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* --- CUERPO PRINCIPAL (FONDO) --- */
+/* El fondo con la imagen del hotel */
 main.hero-reservation {
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/hotel.jpg') no-repeat center center fixed;
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)), 
+                url('../img/hotel.jpg') no-repeat center center fixed;
     background-size: cover;
-    flex-grow: 1;
-    width: 100%;
-    display: flex; 
-    flex-direction: column; 
-    align-items: center;    
-    justify-content: center; 
-    padding: 60px 0;
+    padding: 100px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
 }
 
-/* Título "RESERVAS" */
+/* El titulo que dice RESERVAS encima de la caja */
 .title-badge {
     background-color: #000;
-    border: 2px solid #fff;
-    padding: 10px 45px;
-    border-radius: 5px;
-    z-index: 10;
-    margin-bottom: -25px;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    border: 1px solid #fff;
+    padding: 8px 30px;
+    margin-bottom: -20px;
+    position: relative;
+    z-index: 5;
 }
 
 .title-badge h1 {
-    color: #fff;
     font-family: 'Playfair Display', serif;
-    margin: 0;
-    letter-spacing: 4px;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-}
-
-/* CUADRO DE DATOS (BOOKING CARD) */
-.booking-card {
-    background: var(--bg-glass);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 1px solid rgb(255, 255, 255);
-    padding: 60px 40px 40px 40px; 
-    border-radius: 20px;
-    width: 95%;
-    max-width: 550px;
-    box-shadow: 0 25px 50px rgba(0,0,0,0.4);
-}
-
-/* --- TEXTOS EN COLOR BLANCO --- */
-.form-label {
-    color: #ffffff ; /* Fuerza el color blanco en las etiquetas */
-    font-weight: 500;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.6); /* Mejora legibilidad */
-    display: block;
-    text-align: left;
-    margin-bottom: 5px;
-}
-
-.total-section p {
-    color: #ffffff ; /* Texto de 'Total a pagar' en blanco */
     font-size: 1.4rem;
+    letter-spacing: 3px;
+    margin: 0;
+}
+
+/* La caja transparente (efecto vidrio) */
+.booking-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 50px 35px 35px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* Etiquetas del formulario */
+.form-label {
+    font-size: 0.85rem;
     font-weight: 600;
+    color: #f1f1f1;
+}
+
+.booking-instructions {
+    font-size: 0.9rem;
+    color: #ddd;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+/* Inputs blancos */
+.form-control, .form-select {
+    border-radius: 6px;
+    padding: 10px;
+    border: none;
+    font-size: 0.95rem;
+}
+
+/* Seccion del total */
+.total-section p {
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 
 .price-amount {
-    color: #ffd700; /* El número del precio lo mantenemos en dorado para resaltar */
+    color: #ffd700; /* Color oro para que resalte el precio */
 }
 
-/* Inputs y Selects (El texto dentro es oscuro para leerse sobre el blanco) */
-.form-control, .form-select {
-    border-radius: 8px;
-    border: none;
-    padding: 12px;
-    background-color: #fff;
-    color: #070707;
-    margin-bottom: 15px;
-}
-
+/* El boton de confirmar */
 .btn-confirm {
-    background: #a68b5a;
+    background: var(--dorado);
     color: #fff;
     border: none;
     width: 100%;
-    padding: 15px;
-    border-radius: 8px;
-    font-weight: 700;
+    padding: 12px;
+    font-weight: bold;
     text-transform: uppercase;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 .btn-confirm:hover {
-    background: #8e7345;
+    background: var(--dorado-oscuro);
+    transform: translateY(-2px);
 }
 
-<<<<<<< HEAD
-/* Pie de página */
+/* Footer estilo oscuro */
 footer {
-    font-size: 0.9rem;
-}
-
-/* Imágenes de servicios */
-.servicio-img {
-  width: 80%;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-/* Márgenes */
-.espacio-pequeno { margin-top: 0.5rem; }
-.espacio-medio { margin-top: 1rem; }
-.espacio-grande { margin-top: 1.5rem; }
-.espacio-abajo { margin-bottom: 1rem; }
-=======
-/* --- PIE DE PÁGINA --- */
-.custom-footer {
-    background-color: var(--deep-black);
-    color: #ffffff;
-    padding: 20px 0;
-    width: 100%;
-    text-align: center;
     border-top: 1px solid #333;
 }
->>>>>>> e9775d89f43797d230e096a9e97748dee493eb7e
-=======
-.nav-link { 
-
-      color: #ffffff ;}
-
-
- .main-wrapper {
-    display: flex ;
-    flex-direction:  column ;
-     min-height:  100vh ;
-     
-}
-
-/*FONDO */
-main.hero-reservation {
-     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/hotel.jpg')  no-repeat center center fixed ;
-
-      background-size: cover;
-
-             flex-grow: 1;
-    width: 100%;
-      display: flex; 
-    flex-direction:  column; 
-     align-items:    center;    
-    justify-content:  center; 
-      padding: 60px 0;
- }
-
-
-.title-badge  
-{
-      background-color: #000;
-         border: 2px solid #fff;
-    padding: 10px   45px;
-     border-radius:  5px;
-    z-index: 10;
-       margin-bottom:  -25px;
-     box-shadow: 0 10px  20px rgba(0,0,0,0.5);
-}
-
-     .title-badge h1  {
-       color: #fff;
-    font-family:   'Playfair Display', serif;
-         margin: 0;
-     letter-spacing:  4px;
-    font-size: 1.6rem;
-        text-transform:   uppercase;
-}
-
-
-.booking-card {
-
-
-    background: var(--bg-glass);
-       backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-         border: 1px solid rgb(255, 255, 255);
-        padding: 60px 40px 40px 40px; 
-     border-radius: 20px;
-       width: 95%;
-            max-width: 550px;
-      box-shadow: 0 25px 50px rgba(0,0,0,0.4);
-
- }
-
-
-.form-label {
-
-      color: #ffffff ; 
-    font-weight: 500;
-       text-shadow: 1px 1px 2px rgba(0,0,0,0.6); 
-    display: block;
-     text-align: left;
-        margin-bottom: 5px;
-
-}
-
-.total-section p  {
-
-    color: #ffffff ; 
-       font-size: 1.4rem;
-               font-weight: 600;
- }
-
-.price-amount  {
-    color: #ffd700; }
-
-
-.form-control, .form-select  {
-
-       border-radius: 8px;
-    border: none;
-        padding: 12px;
-     background-color: #fff;
-    color: #070707;
-     margin-bottom: 15px;
-
-}
-
-  .btn-confirm {
-     background: #a68b5a ;
-      color: #fff;
-    border: none;
-     width: 100%;
-     padding: 15px;
-      border-radius: 8px;
-      font-weight: 700;
-       text-transform: uppercase ;
-    margin-top: 10px;
-        cursor: pointer;
-     transition: 0.3s ease;
-    }
-
-   .btn-confirm:hover {
-    background: #8e7345;}
-
-
- .custom-footer {
-
-    background-color: var(--deep-black);
-    color: #ffffff;
-     padding: 20px 0;
-      width: 100%;
-    text-align: center;
-       border-top: 1px solid #333;
-    }
->>>>>>> 1e135030774f92dbbaf8cc6b22f4c85420125d6e
