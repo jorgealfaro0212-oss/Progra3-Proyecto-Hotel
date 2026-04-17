@@ -1,6 +1,6 @@
-/* ESTILOS PARA LA PÁGINA DE DONDE ESTAMOS */
+/* ESTILOS PARA LA PÁGINA DE la ubicacion */
 
-/* Mis colores */
+ /* mis colores usados*/
 :root {
     --mi-azul: #4db8ff;
     --sombra-azul: rgba(77, 184, 255, 0.3);
@@ -11,30 +11,30 @@
     font-family: 'Poppins', sans-serif;
 }
 
-/* La foto de arriba */
+    /*foto de arriba */
 .ubicacion-page .hero {
-    /* Si cambias la foto, asegúrate que sea grande */
+    /* Si cambia  foto, asegúrate que sea grande */
     background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
                 url('../img/hotel-view.jpg'); 
     background-position: center;
     background-size: cover;
     height: 55vh;
     display: flex;
-    align-items: center;
+     align-items: center;
     justify-content: center;
     color: white;
 }
 
 .ubicacion-page .hero h1 {
     font-family: 'Playfair Display', serif;
-    font-size: 3.5rem;
+     font-size: 3.5rem;
     font-weight: bold;
 }
 
-/* El cuadro blanco que flota */
+/* cuadro blanco que esta flotando */
 .location-section {
     padding: 0 15px 60px;
-    margin-top: -50px; /* Esto hace que el cuadro se meta un poco en la foto de arriba */
+    margin-top: -50px; 
     position: relative;
     z-index: 2;
 }
@@ -45,26 +45,25 @@
     background: white;
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 15px 30px rgba(0,0,0,0.1); /* Sombra suave */
-}
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1); 
 
 .info-padding {
     padding: 40px;
 }
 
-/* Los iconos redondos con el color celeste */
+/* iconos  color celeste */
 .icon-box {
     width: 45px;
     height: 45px;
     background: #eef9ff;
     border: 1.5px solid var(--mi-azul);
-    border-radius: 8px;
+     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 15px;
     color: var(--mi-azul);
-    transition: 0.3s; /* Para que el cambio de color sea suave */
+    transition: 0.3s; /* transicion para que el cambio de color sea suave */
 }
 
 .detail-item {
@@ -73,14 +72,14 @@
     margin-bottom: 18px;
 }
 
-/* Efecto cuando pasas el mouse por encima */
+    /* Efecto mouse  */
 .detail-item:hover .icon-box {
-    background: var(--mi-azul);
+     background: var(--mi-azul);
     color: white;
-    transform: translateY(-3px); /* Se mueve un poquito hacia arriba */
+    transform: translateY(-3px); 
 }
 
-/* Lista de transporte */
+
 .how-to-get h3 {
     margin-top: 30px;
     font-size: 1.4rem;
@@ -88,13 +87,13 @@
 
 .how-to-get li {
     padding: 8px 0;
-    border-bottom: 1px solid #eee; /* Una rayita separadora */
+    border-bottom: 1px solid #eee; 
 }
 
 .how-to-get li i {
     color: var(--mi-azul);
     margin-right: 8px;
-}
+ }
 
 /* El mapa de Google */
 .map-side {
@@ -102,17 +101,17 @@
     background-color: #ddd;
 }
 
-/* El botón de abrir en Google Maps */
-.btn-mapa {
+  /* El btn de abrir el Maps */
+.btn-mapa  {
     border: 2px solid var(--mi-azul);
-    color: var(--mi-azul);
+     color: var(--mi-azul);
     padding: 10px 25px;
     font-weight: 600;
     border-radius: 25px;
     text-decoration: none;
     display: inline-block;
     transition: 0.3s;
-}
+ }
 
 .btn-mapa:hover {
     background: var(--mi-azul);
@@ -120,9 +119,9 @@
     box-shadow: 0 4px 12px var(--sombra-azul);
 }
 
-/* Arreglos para que en el celular no se vea amontonado */
-@media (max-width: 768px) {
+   /* Arreglos para que en el celular no se vea amontonado */
+  @media (max-width: 768px) {
     .info-padding { padding: 25px; }
     .map-side { min-height: 300px; }
     .ubicacion-page .hero h1 { font-size: 2.5rem; }
-}
+}}

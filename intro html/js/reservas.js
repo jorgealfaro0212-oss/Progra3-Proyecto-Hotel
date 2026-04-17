@@ -1,4 +1,4 @@
-/* --- LÓGICA PARA CALCULAR EL PRECIO DE LAS RESERVAS --- */
+/* --- logica de calculo PRECIO DE LAS RESERVAS --- */
 
 document.addEventListener("DOMContentLoaded", function () {
     const checkinInput = document.getElementById("checkin");
@@ -7,14 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
     const totalPriceDisplay = document.getElementById("totalPrice");
     const reservationForm = document.getElementById("reservation-form");
 
-    // Para que el precio se vea bien (formato moneda)
+    // (formato moneda)
     const formatter = new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: "USD",
         minimumFractionDigits: 0
     });
 
-    // Poner las fechas minimas (hoy y mañana)
+    // fechas minimas (hoy y mañana)
     function iniciarFechas() {
         const hoy = new Date().toISOString().split("T")[0];
         checkinInput.min = hoy;

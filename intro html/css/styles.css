@@ -1,4 +1,4 @@
-/* Estilo general de la página */
+/* Estilo general que lleva  la página */
 body {
     font-family: 'Segoe UI', sans-serif;
     color: #333;
@@ -6,18 +6,18 @@ body {
     padding: 0;
 }
 
-/* Sección Hero */
+  /* Hero */
 .hero {
     background-position: center;
     background-repeat: no-repeat;
 }
 
-/* Títulos principales */
+   /* títulos principales */
 h1, h2 {
     font-family: 'Georgia', serif;
 }
 
-/* Botón principal */
+
 .btn-light {
     background-color: rgba(255,255,255,0.8);
     border-radius: 30px;
@@ -29,12 +29,12 @@ h1, h2 {
     transform: scale(1.05);
 }
 
-/* Pie de página */
+ /* Pie de la página */
 footer {
     font-size: 0.9rem;
 }
 
-/* Imágenes de servicios */
+/* Imágenes de los servicios ofecidos*/
 .servicio-img {
   width: 80%;
   height: 250px;
@@ -42,7 +42,7 @@ footer {
   border-radius: 10px;
 }
 
-/* Márgenes */
+   /* Márgenes */
 .espacio-pequeno { margin-top: 0.5rem; }
 .espacio-medio { margin-top: 1rem; }
 .espacio-grande { margin-top: 1.5rem; }

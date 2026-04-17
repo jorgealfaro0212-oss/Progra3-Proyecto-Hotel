@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reservas | Helios Palace Hotel</title>
-    
+    <!-- tipografia -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -12,115 +12,116 @@
 </head>
 <body class="reserva-page">
     
-    <header>
+    <header><!-- Ebarra de navegarciom -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand fw-bold" href="index.html">Helios Palace</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="menu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
-                        <li class="nav-item"><a class="nav-link active" href="reservas.html">Reservas</a></li>
-                        <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
-                    </ul>
-                </div>
-            </div>
+     <div class="container">
+      <!--logo-->
+     <a class="navbar-brand fw-bold" href="index.html">Helios Palace</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+       <span class="navbar-toggler-icon"></span>
+
+    </button>   <!-- menu de seleccion-->
+    <div class="collapse navbar-collapse" id="menu">
+     <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+    <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+     <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
+     <li class="nav-item"><a class="nav-link active" href="reservas.html">Reservas</a></li>
+      <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+      <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+       </div>
+     </div>
         </nav>
     </header>
-
+     <!-- contenedor principal   -->
     <div class="main-wrapper">
         <main class="hero-reservation">
-            <div class="container d-flex flex-column align-items-center">
-                
-                <div class="title-badge">
-                    <h1>Haz tu Reserva</h1>
+     <div class="container d-flex flex-column align-items-center">           
+    <div class="title-badge">
+ <h1>Haz tu Reserva</h1>
+     </div>
+        <div class="booking-card"><!-- formulario -->
+    <form id="reservation-form">
+     <div class="mb-3 text-start">
+     <label for="name" class="form-label">Nombre y Apellido</label>
+    <input type="text" id="name" class="form-control" placeholder="Escribe tu nombre..." required>
+     </div>
+    <div class="mb-3 text-start">
+      <label for="email" class="form-label">Tu Correo</label>
+       <input type="email" id="email" class="form-control" placeholder="ejemplo@correo.com" required>
+         </div>
+       <!-- Instruccion de uso -->
+    <p class="booking-instructions">Elige las fechas para calcular el precio automáticamente.</p>
+<div class="row mb-3">
+         <div class="col-6 text-start">
+      <label for="checkin" class="form-label">Check-in</label>
+           <input type="date" id="checkin" class="form-control" required>
+         </div>
+            <div class="col-6 text-start">
+         <label for="checkout" class="form-label">Check-out</label>
+          <input type="date" id="checkout" class="form-control" required>
+          </div>
+ </div>
+
+ <!--  tipo de habitacion y costo x noche -->
+         <div class="mb-4 text-start">
+      <label for="roomType" class="form-label">Habitación</label>
+        <select id="roomType" class="form-select" required>
+                 <option value="" disabled selected>-- Elige una habitación --</option>
+                 <option value="85">Doble Estándar ($85)</option>
+              <option value="95">Doble Vista Jardín ($95)</option>
+              <option value="115">Doble Deluxe ($115)</option>
+             <option value="135">Deluxe Vista Piscina ($135)</option>
+              <option value="170">Familiar Superior ($170)</option>
+              <option value="185">Familiar Vista Piscina ($185)</option>
+                  <option value="210">Suite Familiar ($210)</option>
+             <option value="250">Suite Presidencial ($250)</option>
+                     </select>
+                        </div>
+<!-- total -->
+              <div class="total-section mb-4">
+             <p>Monto Total: <span class="price-amount">$<span id="totalPrice">0</span></span></p>
                 </div>
 
-                <div class="booking-card">
-                    <form id="reservation-form">
-                        <div class="mb-3 text-start">
-                            <label for="name" class="form-label">Nombre y Apellido</label>
-                            <input type="text" id="name" class="form-control" placeholder="Escribe tu nombre..." required>
-                        </div>
-
-                        <div class="mb-3 text-start">
-                            <label for="email" class="form-label">Tu Correo</label>
-                            <input type="email" id="email" class="form-control" placeholder="ejemplo@correo.com" required>
-                        </div>
-
-                        <p class="booking-instructions">Elige las fechas para calcular el precio automáticamente.</p>
-
-                        <div class="row mb-3">
-                            <div class="col-6 text-start">
-                                <label for="checkin" class="form-label">Check-in</label>
-                                <input type="date" id="checkin" class="form-control" required>
-                            </div>
-                            <div class="col-6 text-start">
-                                <label for="checkout" class="form-label">Check-out</label>
-                                <input type="date" id="checkout" class="form-control" required>
-                            </div>
-                        </div>
-
-                        <div class="mb-4 text-start">
-                            <label for="roomType" class="form-label">Habitación</label>
-                            <select id="roomType" class="form-select" required>
-                                <option value="" disabled selected>-- Elige una habitación --</option>
-                                <option value="85">Doble Estándar ($85)</option>
-                                <option value="95">Doble Vista Jardín ($95)</option>
-                                <option value="115">Doble Deluxe ($115)</option>
-                                <option value="135">Deluxe Vista Piscina ($135)</option>
-                                <option value="170">Familiar Superior ($170)</option>
-                                <option value="185">Familiar Vista Piscina ($185)</option>
-                                <option value="210">Suite Familiar ($210)</option>
-                                <option value="250">Suite Presidencial ($250)</option>
-                            </select>
-                        </div>
-
-                        <div class="total-section mb-4">
-                            <p>Monto Total: <span class="price-amount">$<span id="totalPrice">0</span></span></p>
-                        </div>
-
-                        <button type="submit" class="btn btn-confirm">Reservar Ahora</button>
-                    </form>
-                </div>
+              <button type="submit" class="btn btn-confirm">Reservar Ahora</button>
+            </form>
+            </div>
             </div>
         </main>
     </div>
-
+ 
+    <!--pie-->
     <footer class="bg-dark text-white pt-5 pb-3">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 mb-3">
-                    <h5 class="fw-bold">Helios Palace</h5>
-                    <p class="small opacity-75">Tu mejor opción para el descanso.</p>
+            <div class="col-md-3 mb-3">
+         <h5 class="fw-bold">Helios Palace</h5>
+        <p class="small opacity-75">Tu mejor opción para el descanso.</p>
                 </div>
-
+ 
+            <!-- columas1,2,3-->
                 <div class="col-md-3 mb-3">
                     <h6 class="fw-bold">Explora</h6>
                     <ul class="list-unstyled small">
-                        <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
-                        <li><a href="servicios.html" class="text-white text-decoration-none">Servicios</a></li>
-                        <li><a href="habitaciones.html" class="text-white text-decoration-none">Habitaciones</a></li>
+                  <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+                  <li><a href="servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+                  <li><a href="habitaciones.html" class="text-white text-decoration-none">Habitaciones</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-3 mb-3">
                     <h6 class="fw-bold">Legal</h6>
                     <ul class="list-unstyled small">
-                        <li><a href="#" class="text-white text-decoration-none">Privacidad</a></li>
-                        <li><a href="#" class="text-white text-decoration-none">Términos</a></li>
+                 <li><a href="#" class="text-white text-decoration-none">Privacidad</a></li>
+                 <li><a href="#" class="text-white text-decoration-none">Términos</a></li>
                     </ul>
                 </div>
 
                 <div class="col-md-3 mb-3">
-                    <h6 class="fw-bold">Contacto</h6>
-                    <p class="small mb-0">reservas@heliospalace.com</p>
-                    <p class="small">Tel: +506 2222-3333</p>
+             <h6 class="fw-bold">Contacto</h6>
+            <p class="small mb-0">reservas@heliospalace.com</p>
+            <p class="small">Tel: +506 2222-3333</p>
                 </div>
             </div>
             <hr class="border-secondary">

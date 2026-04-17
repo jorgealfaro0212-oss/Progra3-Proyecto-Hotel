@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/login.css">
 </head>
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100">       <!-- flexbox para ocupar altura   -->
 
+         <!-- barra de navegacion cabezera   -->
   <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
       <div class="container">
@@ -20,84 +21,87 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <!-- Menu para navegar -->
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
-              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-              <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-              <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
-              <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas</a></li>
-              <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
-              <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+          <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+         <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+         <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas</a></li>
+         <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+         <li class="nav-item"><a class="nav-link active" href="login.html">Login</a></li>
+       </ul>
+       </div>
+     </div>
+     </nav>
   </header>
 
   <main class="flex-grow-1 d-flex align-items-center my-5">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-md-5 col-lg-4">
-                <div class="login-card text-center shadow-lg">
-                    <h2 class="mb-4">Iniciar sesión</h2>
-                    
-                    <form id="loginForm">
-                        <div class="mb-4 text-start">
-                            <label class="form-label">Usuario</label>
-                            <input type="text" id="user" class="form-control" placeholder="administrador" required>
-                        </div>
-                        <div class="mb-4 text-start">
-                            <label class="form-label">Contraseña</label>
-                            <input type="password" id="pass" class="form-control" placeholder="•••••" required>
-                        </div>
-                        <button type="submit" class="btn btn-ingresar w-100 mt-2 py-2">Ingresar</button>
+      <div class="col-md-5 col-lg-4">
+  <div class="login-card text-center shadow-lg">
+       <h2 class="mb-4">Iniciar sesión</h2>
+               <!-- formulario para el login -->      
+     <form id="loginForm">
+       <div class="mb-4 text-start">
+      <label class="form-label">Usuario</label>
+      <input type="text" id="user" class="form-control" placeholder="administrador" required>
+    </div>
+    <div class="mb-4 text-start">
+       <label class="form-label">Contraseña</label>
+      <input type="password" id="pass" class="form-control" placeholder="•••••" required>
+     </div>
+  <button type="submit" class="btn btn-ingresar w-100 mt-2 py-2">Ingresar</button>
                         
-                        <div id="errorMessage" class="text-danger mt-3" style="display:none;">
-                            Credenciales incorrectas. Intente de nuevo.
-                        </div>
-                    </form>
-                </div>
-            </div>
+    <div id="errorMessage" class="text-danger mt-3" style="display:none;">
+      Credenciales incorrectas. Intente de nuevo por favor.
+        </div>
+      </form>
+           </div>
+        </div>
         </div>
     </div>
   </main>
-
+       <!-- Pie de la pagina -->
   <footer class="bg-dark text-white pt-5 pb-4 mt-auto">
     <div class="container">
       <div class="row">
-        
+        <!-- columna 1:de descripciones -->
         <div class="col-md-3 mb-4">
           <h5 class="fw-bold">Helios Palace</h5>
           <p class="opacity-75">Un lugar único para descanso y experiencias exclusivas.</p>
         </div>
 
-        <div class="col-md-3 mb-4">
+
+        
+        <div class="col-md-3 mb-4"><!--  columna 2:de navegacio -->
           <h6 class="fw-bold text-uppercase small mb-3">Navegación</h6>
           <ul class="list-unstyled">
-            <li class="mb-2"><a href="index.html" class="text-white text-decoration-none opacity-75">Inicio</a></li>
-            <li class="mb-2"><a href="servicios.html" class="text-white text-decoration-none opacity-75">Servicios</a></li>
-            <li class="mb-2"><a href="habitaciones.html" class="text-white text-decoration-none opacity-75">Habitaciones</a></li>
-            <li class="mb-2"><a href="reservas.html" class="text-white text-decoration-none opacity-75">Reservas</a></li>
+          <li class="mb-2"><a href="index.html" class="text-white text-decoration-none opacity-75">Inicio</a></li>
+          <li class="mb-2"><a href="servicios.html" class="text-white text-decoration-none opacity-75">Servicios</a></li>
+          <li class="mb-2"><a href="habitaciones.html" class="text-white text-decoration-none opacity-75">Habitaciones</a></li>
+          <li class="mb-2"><a href="reservas.html" class="text-white text-decoration-none opacity-75">Reservas</a></li>
+          </ul>
+        </div>
+        <!-- columna 3: de info   -->
+    <div class="col-md-3 mb-4">
+      <h6 class="fw-bold text-uppercase small mb-3">Información</h6>
+    <ul class="list-unstyled">
+      <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Términos y Condiciones</a></li>
+      <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Política de Privacidad</a></li>
           </ul>
         </div>
 
         <div class="col-md-3 mb-4">
-          <h6 class="fw-bold text-uppercase small mb-3">Información</h6>
-          <ul class="list-unstyled">
-            <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Términos y Condiciones</a></li>
-            <li class="mb-2"><a href="#" class="text-white text-decoration-none opacity-75">Política de Privacidad</a></li>
-          </ul>
-        </div>
-
-        <div class="col-md-3 mb-4">
-          <h6 class="fw-bold text-uppercase small mb-3">Contáctanos</h6>
-          <p class="mb-1">Email: reservas@heliospalace.com</p>
-          <p class="mb-3">Tel: +506 2222-3333</p>
-          <div class="d-flex gap-3">
-            <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
-          </div>
+      <h6 class="fw-bold text-uppercase small mb-3">Contáctanos</h6>
+    <p class="mb-1">Email: reservas@heliospalace.com</p>
+    <p class="mb-3">Tel: +506 2222-3333</p>
+   <div class="d-flex gap-3">
+   <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+   <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+   <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+    </div>
         </div>
 
       </div>
