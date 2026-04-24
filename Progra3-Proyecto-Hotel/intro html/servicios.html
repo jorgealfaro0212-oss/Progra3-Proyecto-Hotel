@@ -1,76 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Servicios | Helios Palace Hotel</title>
+    <!-- Tipografías -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS  -->
     <link rel="stylesheet" href="css/servicios.css">
 </head>
-<body>
-    <!-- encabezado -->
-    <header>
-    <nav>
-     <h1>Servicios Disponibles</h1>
-      <ul>
 
-        <!-- menu de enlaces -->
-     <li><a href="ubicacion.html">Ver Mapa</a></li>
-     <li><a href="">+506 1234 5678</a></li>
-     <li><a href="reservas.html">Reservar</a></li>
-      <li><a href="index.html">Volver al inicio</a></li>
-         </ul>
-     </nav>
-    </header>
-    <!-- contenido principal y sus secciones  -->
-    <main>
-        <section>
-            <p>En Helios Palace Hotel, nos dedicamos a superar sus expectativas. Más allá de un descanso reparador, ofrecemos una experiencia integral donde el lujo y la comodidad se encuentran en cada detalle de nuestras instalaciones.</p>
-          <figure id="">
-            <img id="tarjeta" src="img/tarjeta.jpg" alt="">
-            </figure>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nemo a dolorum pariatur rerum ipsum voluptates illo est ullam aliquid! Alias aperiam modi animi esse ea. Minus sed eos nisi.</p>
-        </section>
-        <section>
-            <h2>Gastronomia</h2>
-            <p>Disfrute de un viaje culinario en nuestro restaurante insignia. Contamos con una selección de platillos internacionales y locales preparados por chefs expertos, ideales para una cena romántica o un almuerzo de negocios.</p>
-            <figure>
-                <img id="tarjeta" src="img/comida1.jpg" alt="">
-            </figure>
-        </section>
-        <section>
-            <h2>Su bienestar nos importa</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, facere dignissimos ab possimus nemo qui molestiae, porro saepe vitae tempora autem sunt voluptas in ut voluptatibus ad, architecto quaerat veritatis.</p>
-            <h3>Por eso contamos con los siguientes servicios</h3>
-            <h4>Gimanacio</h4>
-            <p>Mantenga su rutina de entrenamiento en nuestro centro de fitness totalmente equipado con maquinaria de última generación y áreas de estiramiento.</p>
-            <figure>
-                <img id="tarjeta"src="img/gym.jpg" alt="">
-            </figure>
-            <h4>Jacuzzi</h4>
-            <p>Regálese un momento de paz en nuestra zona de hidromasaje. El lugar perfecto para desconectar del estrés y renovar energías bajo un ambiente de serenidad absoluta.</p>
-            <figure>
-                <img id="tarjeta" src="img/Jacuzzi.jpg" alt="">
-            </figure>
-            <h4>Parqueo seguro</h4>
-            <p>Su tranquilidad es nuestra prioridad. Contamos con estacionamiento privado, vigilancia las 24 horas y acceso directo al lobby para su mayor comodidad.</p>
-            <figure>
-                <img id="tarjeta" src="img/parqueo.jpg" alt="">
-            </figure>
-        </section>
-        <section>
-            <h2>Habitaciones</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus qui amet perferendis aliquam aut voluptatum recusandae a veniam quia enim doloremque, delectus nemo molestiae, assumenda ipsa facilis repellat vel odio.</p>
-            <figure>
-                <a href="habitaciones.html">
-              <img id="tarjeta" src="img/habitacion.jpg" alt="">
-             </a>
-            <figcaption>Haga click en la imagen</figcaption>
-            </figure>
-        </section>
-    </main>
-    <!-- pie-->
-    <footer>
-    <p>© 2026 Helios Palace Hotel | Todos los derechos reservados</p>
-    </footer>
+<body class="services-page">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">Helios Palace</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link active" href="servicios.html">Servicios</a></li>
+        <li class="nav-item"><a class="nav-link" href="habitaciones.html">Habitaciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="reservas.html">Reservas</a></li>
+        <li class="nav-item"><a class="nav-link" href="ubicacion.html">Ubicación</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ENCABEZADO -->
+<header class="services-hero text-center">
+  <div class="container">
+    <h1>Servicios del Hotel</h1>
+    <p class="lead">
+      Diseñados para brindarte confort, lujo y experiencias inolvidables.
+    </p>
+  </div>
+</header>
+
+<!-- CONTENIDO PRINCIPAL -->
+<main class="container my-5">
+
+  <!-- INTRO -->
+  <div class="text-center mb-5">
+    <img src="img/tarjeta.jpg" class="img-fluid rounded shadow" alt="Helios Palace">
+  </div>
+
+  <!-- SERVICIOS -->
+  <div class="row g-4">
+
+    <!-- Gastronomía -->
+    <div class="col-md-4">
+      <div class="card service-card h-100">
+        <img src="img/comida1.jpg" class="card-img-top" alt="Gastronomía">
+        <div class="card-body">
+          <h5 class="card-title">Gastronomía</h5>
+          <p class="card-text">
+            Platillos internacionales y locales preparados por chefs expertos.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gimnasio -->
+    <div class="col-md-4">
+      <div class="card service-card h-100">
+        <img src="img/gym.jpg" class="card-img-top" alt="Gimnasio">
+        <div class="card-body">
+          <h5 class="card-title">Gimnasio</h5>
+          <p class="card-text">
+            Equipamiento moderno para mantener tu rutina saludable.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Jacuzzi -->
+    <div class="col-md-4">
+      <div class="card service-card h-100">
+        <img src="img/Jacuzzi.jpg" class="card-img-top" alt="Jacuzzi">
+        <div class="card-body">
+          <h5 class="card-title">Jacuzzi</h5>
+          <p class="card-text">
+            Relájate y disfruta de un ambiente de descanso total.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Parqueo -->
+    <div class="col-md-6">
+      <div class="card service-card h-100">
+        <img src="img/parqueo.jpg" class="card-img-top" alt="Parqueo">
+        <div class="card-body">
+          <h5 class="card-title">Parqueo Privado</h5>
+          <p class="card-text">
+            Seguridad y comodidad para tu vehículo durante tu estadía.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Habitaciones -->
+    <div class="col-md-6">
+      <a href="habitaciones.html" class="text-decoration-none">
+        <div class="card service-card h-100">
+          <img src="img/habitacion.jpg" class="card-img-top" alt="Habitaciones">
+          <div class="card-body">
+            <h5 class="card-title">Habitaciones</h5>
+            <p class="card-text">
+              Espacios confortables diseñados para tu descanso.
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer class="bg-dark text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-3 mb-3">
+        <h5 class="fw-bold">Helios Palace</h5>
+        <p class="small opacity-75">Tu mejor opción para el descanso.</p>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <h6 class="fw-bold">Explora</h6>
+        <ul class="list-unstyled small">
+          <li><a href="index.html" class="text-white text-decoration-none">Inicio</a></li>
+          <li><a href="servicios.html" class="text-white text-decoration-none">Servicios</a></li>
+          <li><a href="habitaciones.html" class="text-white text-decoration-none">Habitaciones</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <h6 class="fw-bold">Legal</h6>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-white text-decoration-none">Privacidad</a></li>
+          <li><a href="#" class="text-white text-decoration-none">Términos</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-3">
+        <h6 class="fw-bold">Contacto</h6>
+        <p class="small mb-0">reservas@heliospalace.com</p>
+        <p class="small">Tel: +506 2222-3333</p>
+      </div>
+
+    </div>
+    <hr class="border-secondary">
+    <div class="text-center">
+      <p class="mb-0 small opacity-50">&copy; 2026 Helios Palace Hotel | Costa Rica</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

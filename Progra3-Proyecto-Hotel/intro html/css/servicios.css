@@ -1,34 +1,22 @@
 body {
-  font-family: "Segoe UI", Arial, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+    font-family: 'Poppins', sans-serif;
 }
 
-h1, h2, h3 {
-  letter-spacing: 0.5px;
+.services-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
 }
 
-
-#tarjeta {
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+.service-card img {
+    height: 220px;
+    object-fit: cover;
 }
 
-#tarjeta:hover {
-  transform: scale(1.02);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card {
-  border: none;
-  border-radius: 10px;
-}
-
-.card img {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
-
-footer {
-  font-size: 0.9rem;
-  opacity: 0.9;
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
 }
